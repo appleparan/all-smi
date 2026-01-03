@@ -112,6 +112,9 @@ redundant_closure = "warn"
 manual_range_contains = "warn"
 module_inception = "warn"
 bool_comparison = "warn"
+# Allow manual modulo check for Rust 1.85 compatibility (Launchpad)
+# is_multiple_of() is unstable until Rust 1.88+ (rust-lang/rust#128101)
+manual_is_multiple_of = "allow"
 
 [lints.rust]
 # Rust compiler lints
